@@ -4,4 +4,9 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
+require 'rake/rdoctask'
+Rake::RDocTask.new(:rdoc) do |rdoc|
+
+end
+
 RailsWithBDD::Application.load_tasks
