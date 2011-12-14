@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
-
+    @disabled = true
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @product }
@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
-
+    @disabled = false
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @product }
@@ -35,6 +35,7 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+    @disabled = false
   end
 
   # POST /products

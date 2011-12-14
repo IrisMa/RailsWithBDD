@@ -12,23 +12,23 @@
     <% end %>
 
     <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.label :title%><br />
+    <%= f.text_field :title, :disabled=>@disabled%>
     </div>
     <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 6 %>
+    <%= f.text_area :description, :rows => 6, :disabled=>@disabled%>
     </div>
     <div class="field">
     <%= f.label :image_url %><br />
-    <%= f.text_field :image_url %>
+    <%= f.text_field :image_url, :disabled=>@disabled%>
     </div>
     <div class="field">
     <%= f.label :price %><br />
-    <%= f.text_field :price %>
+    <%= f.text_field :price, :disabled=>@disabled%>
     </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :disabled=>@disabled%>
   </div>
 <% end %>
