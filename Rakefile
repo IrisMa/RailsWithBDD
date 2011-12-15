@@ -4,8 +4,8 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-require 'rake/rdoctask'
-Rake::RDocTask.new(:rdoc) do |rdoc|
+require 'rdoc/task'
+RDoc::Task.new do |rdoc|
 
 end
 
