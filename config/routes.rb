@@ -1,6 +1,10 @@
 RailsWithBDD::Application.routes.draw do
+  get "store/index"
 
+  get "products/index"
   resources :products
+
+  root :to=>"store#index#index", :as=>"store"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
