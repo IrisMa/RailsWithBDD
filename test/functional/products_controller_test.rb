@@ -19,14 +19,33 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-
+    get :new
+    assert_response :success
   end
 
   test "should create product" do
+    assert_difference('Product.count') do
+      post :create, :product=>@update
+    end
 
+    assert_redirected_to product_path(assigns(:product))
+    puts @update
+    puts @update.to_param
+  end
+
+  test "should show product" do
+    get :show, :id=>@product.to_param
+    assert_response :success
   end
 
   test "should update product" do
+    put :update, :id=>@product.to_param, :product=>@update
+    assert_redirected_to product_path(assigns(:product))
+  end
 
+  test "should destroy product" do
+    assert_difference('Product.count', -1) do
+      delete :destroy, :id=>@product.to_param
+    end
   end
 end
