@@ -29,8 +29,6 @@ class ProductsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to product_path(assigns(:product))
-    puts @update
-    puts @update.to_param
   end
 
   test "should show product" do

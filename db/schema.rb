@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111214070531) do
+ActiveRecord::Schema.define(:version => 20111219044246) do
+
+  create_table "microposts", :force => true do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "movies", :force => true do |t|
     t.date     "showtime_date"
@@ -25,6 +32,13 @@ ActiveRecord::Schema.define(:version => 20111214070531) do
     t.text     "description"
     t.string   "image_url"
     t.decimal  "price",       :precision => 8, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

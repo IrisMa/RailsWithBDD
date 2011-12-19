@@ -1,9 +1,21 @@
 RailsWithBDD::Application.routes.draw do
+  get "pages/about"
+
+  get "page/about"
+
+  get "pages/home"
+
+  get "pages/contact"
+
+  resources :microposts
+
+  resources :users
+
   get "store/index"
 
   get "products/index"
   resources :products
-  root :to=>"store#index#index", :as=>"store"
+  root :to=>"store#inde", :as=>"store"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
