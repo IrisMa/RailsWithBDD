@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web Store</title>
-  <%= stylesheet_link_tag "scaffold" %>
-  <%= stylesheet_link_tag  "depot", :media => "all"%>
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag 'blueprint/screen', :media=>'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print', :media => 'print'%>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body id="store">
-<div id="banner">
-
-  <%= @page_title || "Web store"%>
-</div>
-<div id="columns">
-  <div id='side'>
-    <a href="http://www....">Home</a><br />
-    <a href="http://www..../faq">Questions</a><br />
-    <a href="http://www..../news">News</a><br />
-    <a href="http://www..../contact">Contact</a><br />
+<body>
+  <div class="container">
+    <header>
+      <%= image_tag('rails.png', :alt => 'Sample App', :class=>"round") %>
+      <nav class="round">
+        <ul>
+          <li><%= link_to "Home", "#" %></li>
+          <li><%= link_to "Help", "#" %></li>
+          <li><%= link_to "Sign in", "#" %></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="round">
+      <%= yield %>
+    </section>
   </div>
-  <div id="main">
-    <%= yield %>
-  </div>
-
-</div>
 
 
 </body>
