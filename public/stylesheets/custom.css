@@ -6,6 +6,7 @@ body{
     background: #cff;
 }
 
+/*Header*/
 header{
     padding-top: 20px;
 }
@@ -13,6 +14,19 @@ header{
 header img{
     padding: lem;
     background: #fff;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin: 10px;
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav{
+    float: none;
 }
 
 section{
@@ -92,3 +106,5 @@ a.signup_button{
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+
+
