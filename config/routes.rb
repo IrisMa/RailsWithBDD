@@ -1,4 +1,6 @@
 RailsWithBDD::Application.routes.draw do
+  get "users/new"
+
   get "pages/about"
 
   get "pages/home"
@@ -8,6 +10,7 @@ RailsWithBDD::Application.routes.draw do
   match '/contact', :to=>'pages#contact'
   match '/about', :to=>'pages#about'
   match '/', :to=>'pages#home'
+  match '/signup', :to=>'users#new'
   resources :microposts
 
   resources :users
