@@ -17,7 +17,12 @@ group :development, :test do
   gem 'rcov'
   gem 'rdoc'
   gem 'rake'
+  gem 'annotate', '2.4.0'
+  gem 'factory_girl_rails'
+  gem 'gravatar_image_tag'
 end
+
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
