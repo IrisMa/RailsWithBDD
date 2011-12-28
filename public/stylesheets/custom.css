@@ -107,6 +107,9 @@ a.signup_button{
     border-radius: 10px;
 }
 
+div.field, div.action{
+    margin-bottom: 10px;
+}
 
 /*User Show page*/
 table.profile{
