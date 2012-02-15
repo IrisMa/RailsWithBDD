@@ -15,4 +15,8 @@ class PagesController < ApplicationController
   	"test blog"
   end
 
+  def copy_right
+  	"test methods"
+  end
+
 end
