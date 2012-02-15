@@ -14,4 +14,8 @@ class PagesController < ApplicationController
   def blog
   	"blog"
   end
+
+  def copy_right
+  	"copy_right"
+  end
 end
