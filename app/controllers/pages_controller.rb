@@ -11,4 +11,8 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
+  def copy_right
+  	"test methods"
+  end
+
 end
