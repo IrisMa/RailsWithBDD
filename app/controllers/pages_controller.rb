@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def about
     @title = "About"
   end
+
+  def copy_right
+  	"copy_right"
+  end
 end
