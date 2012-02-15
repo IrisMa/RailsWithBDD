@@ -20,6 +20,7 @@ group :development, :test do
   gem 'annotate', '2.4.0'
   gem 'factory_girl_rails'
   gem 'gravatar_image_tag'
+  gem 'mongrel', '>= 1.2.0.pre2'
 end
 
 

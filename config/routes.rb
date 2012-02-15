@@ -11,6 +11,8 @@ RailsWithBDD::Application.routes.draw do
   match '/about', :to=>'pages#about'
   match '/', :to=>'pages#home'
   match '/signup', :to=>'users#new'
+
+  resources "pages", :as=>"contents"
   resources :microposts
 
   resources :users
