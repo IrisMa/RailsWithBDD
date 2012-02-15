@@ -10,13 +10,4 @@ class PagesController < ApplicationController
   def about
     @title = "About"
   end
-
-  def blog
-  	"test blog"
-  end
-
-  def copy_right
-  	"test methods"
-  end
-
 end
