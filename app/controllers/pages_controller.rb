@@ -11,6 +11,10 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
+  def copy_right
+    
+  end
+
   def blog
     
   end
