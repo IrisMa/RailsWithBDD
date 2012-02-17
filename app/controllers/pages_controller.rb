@@ -26,4 +26,7 @@ class PagesController < ApplicationController
   def test_again
     
   end
+
+  def test_again_2
+  end
 end
