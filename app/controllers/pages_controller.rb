@@ -18,4 +18,12 @@ class PagesController < ApplicationController
   def blog
     
   end
+
+  def test
+    
+  end
+
+  def test_again
+    
+  end
 end
