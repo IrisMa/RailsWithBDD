@@ -61,4 +61,8 @@ class User < ActiveRecord::Base
     "current user"
   end
 
+  def copy_right
+    "copy right"
+  end
+
 end
