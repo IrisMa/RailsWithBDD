@@ -57,4 +57,8 @@ class User < ActiveRecord::Base
     Digest::SHA2.hexdigest(string)
   end
 
+  def name
+    "current user"
+  end
+
 end
