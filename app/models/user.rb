@@ -65,4 +65,8 @@ class User < ActiveRecord::Base
     "copy right"
   end
 
+  def version
+    "Beta 2"
+  end
+
 end
