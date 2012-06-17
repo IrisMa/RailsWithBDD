@@ -90,4 +90,8 @@ class UsersController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def age
+    21
+  end
 end
